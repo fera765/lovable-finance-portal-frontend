@@ -1,11 +1,10 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AdminLayout from '@/components/admin/AdminLayout';
 import { getAdminPosts, getCategories } from '@/api/apiClient';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
-import { FileText, Category, Settings, Plus } from 'lucide-react';
+import { FileText, FolderTree, Settings, Plus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface Post {
@@ -118,7 +117,7 @@ const Dashboard: React.FC = () => {
                       to="/admin/categorias" 
                       className="flex items-center text-finance-primary hover:underline"
                     >
-                      <Category className="mr-2 h-4 w-4" />
+                      <FolderTree className="mr-2 h-4 w-4" />
                       Gerenciar Categorias
                     </Link>
                     <Link 

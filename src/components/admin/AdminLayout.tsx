@@ -1,4 +1,3 @@
-
 import React, { ReactNode, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
@@ -7,7 +6,7 @@ import {
   Home, 
   Settings,
   FileText, 
-  Category, 
+  FolderTree, 
   LogOut 
 } from 'lucide-react';
 
@@ -69,7 +68,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
             to="/admin/categorias"
             className={`admin-link ${isActive('/admin/categorias') ? 'active' : ''}`}
           >
-            <Category size={18} />
+            <FolderTree size={18} />
             <span>Categorias</span>
           </Link>
           
@@ -141,7 +140,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
             to="/admin/categorias"
             className={`flex flex-col items-center p-2 ${isActive('/admin/categorias') ? 'bg-finance-primary rounded-md' : ''}`}
           >
-            <Category size={18} />
+            <FolderTree size={18} />
             <span className="text-xs mt-1">Categorias</span>
           </Link>
           
