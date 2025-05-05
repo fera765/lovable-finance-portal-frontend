@@ -136,6 +136,3 @@ const NewsDetail: React.FC = () => {
 };
 
 export default NewsDetail;
-</lov-add-dependency>
-<lov-add-dependency>dompurify@latest</lov-add-dependency>
-<lov-add-dependency>@types/dompurify@latest</lov-add-dependency>

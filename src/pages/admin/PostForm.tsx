@@ -268,5 +268,3 @@ const PostForm: React.FC = () => {
 };
 
 export default PostForm;
-</lov-add-dependency>
-<lov-add-dependency>react-quill@latest</lov-add-dependency>
